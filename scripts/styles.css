@@ -1,0 +1,418 @@
+*{
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+   
+}
+
+/****** NAVIGATION*********/
+#navbar{
+background-color: #252a5a;
+margin:auto;
+width: 100%;
+position:fixed;
+padding: 0 2rem;
+z-index:10000;
+top:0;
+list-style: none;
+}
+#nav-tab{
+    margin: 0 auto;
+    width:30rem;
+    font-size: 14px;
+    
+}
+#nav-tab a:not(.active){
+    color:whitesmoke
+}
+.active{
+    color: #252a5a;
+}
+
+#logo{
+    background:url(/Assets/images/logo-white.svg);
+    width: 140px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+/*TOGGLER*/
+.navbar-toggler{
+    color:transparent;
+background-color: #f2f2f2;
+}
+.navbar-toggler-icon{
+    color:#f2f2f2;
+}
+.offcanvas{
+    background-color: #252a5a;
+    justify-content: space-between;
+}
+#close{
+    background-color:#f2f2f2 !important;
+}
+
+/**/
+
+
+/**** SECTION TAG STYLE****/
+section{
+   width:100vw;
+
+    min-height:80vh;
+    max-height: 150vh;
+    color:#252a5a;
+    padding:5rem;
+    background-color: #f2f2f2;
+    margin:auto;
+    z-index: 1;
+    overflow:hidden;
+   }    
+   section:nth-child(odd){
+    background-color: #252a5a;
+    color:#f2f2f2;}
+    
+    
+    .sub-title{
+        font-weight:700;
+        font-size:3rem;
+       text-align: center;
+       margin:30px 0;
+    }
+        
+    
+
+/********* HERO SECTION WITH VIDEO************/
+
+
+.hero{
+    position: relative;
+    width: 100%;
+    top:5rem;
+    display: flex;
+    gap:10px;
+    overflow: hidden;
+   }
+   .hero button:hover{
+    transform: scale(1.1);
+    margin:0 10px;
+   }
+   /*GRADIENT OVERLAY OVER VIDEO*/
+   .overlay{
+    background:linear-gradient(to top,#252a5a,transparent);
+    height:90vh;
+    width:100vw;
+    display:flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+   
+   }
+   .overlay>div{
+    margin-top:30px;
+   }
+   /* CALL TO ACTION */
+   .cta{
+    color:#f2f2f2;
+    text-align: center;
+    font-weight: 600;
+    font-size:48px;
+    letter-spacing:5px;
+   }
+   .cta>span{
+    font-size: 65px;
+   }
+   .cta-container{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .btn-container{
+    display: flex;
+}
+   /* VIDEO */
+   #video{
+    min-width:100%;
+    min-height:100vh;
+    margin: 0 auto;
+    right:0;
+    bottom:0;
+    top:6rem;
+    z-index:-100;
+    position:fixed;
+    padding:0;
+    object-fit:cover;
+    object-position:center;
+    }
+
+    /***********/
+    #meeting-btn{
+        background: transparent;
+        border: 1px solid #f2f2f2;
+        border-radius: 10px;
+        color: whitesmoke;
+        width: 150px;
+        height: 40px;
+       font-size: 14px;
+       padding:0 10px;
+    }
+    
+    #learn-btn{
+        background-color: whitesmoke;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color:#252a5a;
+        width: 150px;
+        height: 40px;
+       font-size: 14px;
+       padding:0 10px;
+        border-radius: 10px;
+        width: 150px;
+        height: 40px;
+       font-size: 14px;
+       padding:0 10px;
+        
+    }
+    #meeting-btn:hover{
+        background-color: whitesmoke;
+        color:#252a5a;
+    }
+
+
+    /****** ABOUT SECTION *********/
+    #about img{
+        width: 31rem;
+    }
+
+
+    /********* SERVICES ************/
+    #Service{
+        max-height: fit-content;
+        padding:30px 20px;
+    }
+
+    .card{
+        min-width:15rem;
+        max-width: 20rem;
+        height:25rem;
+        position: relative;
+        overflow:hidden;
+    }
+
+    .custom-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50%;
+        color: #252a5a;
+        font-size: 7rem; }/* adjust the size as needed */
+
+        .card-title{
+            position: absolute;
+            bottom:10%;
+            text-align: center;
+            margin:0 auto;
+            font-size: 1.4rem;
+            font-weight: 600;
+            left:25%;
+            right: 25%;
+            color:#252a5a;
+        }
+
+
+         /********* PORTFOLIO ************/
+        .custom-carousel{
+                height: 70vh;
+                width: 70vw;
+                justify-content: center;
+            }
+        .slide{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+         /********* FOOTER ************/
+        .footer{
+            background-color: #252a5a;
+            width: 100vw;
+            height: 30vh;
+            padding:30px 10px;
+            max-height: fit-content;
+            overflow: hidden;
+            bottom:0;
+            left:0;
+           
+        }
+        .container{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-direction:row;
+
+        }
+        #footer-logo{
+            background:url(/Assets/images/icon2.svg);
+            width: 140px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .footer-brand{
+            display:inline-flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .copyright{
+            color:#f2f2f2;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 3px;
+            margin: 2px 0;
+        }
+        .footer-contact{
+            display:flex;
+            width: 40%;
+            height: 10rem;
+            flex-direction: column;
+            justify-content: center;
+            gap:10px;
+            font-size: 1rem;
+            text-decoration: none;
+            color:#f2f2f2;
+            border-left:1px solid #f2f2f2;
+            padding:2rem;
+            
+        }
+
+
+        .footer-link{
+            text-decoration: none;
+            color:#f2f2f2;
+          
+        }
+
+      
+
+
+   
+  
+   
+
+
+    /* Extra Small (XS) */
+@media only screen and (max-width: 576px) {
+    /* Styles for screens up to 576 pixels wide */
+    .nav{
+        flex-direction: column;
+       
+    }
+    header{
+        max-width:576px;
+    }
+    #logo{
+        width: 100px;
+        height: 1/-4;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-container{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    section{
+        padding: 30% 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        z-index: 1;
+
+    }
+    .custom-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50%;
+        font-size: 10rem;
+    }
+
+    .custom-carousel{
+        height: 80vh;
+        width: 90vw;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    #Service{
+        max-height: fit-content;
+    }
+    #home{
+        padding-bottom: 3rem;
+    }
+    .cta{
+       font-size: 1.5rem; 
+       margin-bottom:20px;
+    }
+    .cta>span{
+        font-size:3rem;
+    }
+    .sub-title{
+        font-size:1.5rem;
+    }
+    .footer{
+        max-height:15vh;
+        overflow: hidden;
+        flex-direction: row;
+        font-size: 0.3rem;
+        justify-content: space-between;
+    }   
+    #footer-logo{
+        width:50px;
+        height: 50px;
+    }
+    .footer-link{
+        font-size:0.5rem;
+    }
+
+  }
+  
+  /* Small (SM) */
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Styles for screens between 577 and 768 pixels wide */
+
+    #Service{
+        max-height: fit-content;
+    }
+
+  }
+  
+  /* Medium (MD) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Styles for screens between 769 and 992 pixels wide */
+    #Service{
+        max-height: fit-content;
+    }
+  }
+  
+  /* Large (LG) */
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Styles for screens between 993 and 1200 pixels wide */
+  }
+  
+  /* Extra Large (XL) */
+  @media only screen and (min-width: 1201px) {
+    /* Styles for screens 1201 pixels and wider */
+  }
+  
