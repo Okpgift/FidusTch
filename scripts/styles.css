@@ -60,9 +60,8 @@ background-color: #f2f2f2;
 /**** SECTION TAG STYLE****/
 section{
    width:100vw;
-
     min-height:80vh;
-    max-height: 150vh;
+    max-height: 100vh;
     color:#252a5a;
     padding:5rem;
     background-color: #f2f2f2;
@@ -153,6 +152,16 @@ section{
 
     /***********/
     #meeting-btn{
+        background: transparent;
+        border: 1px solid #f2f2f2;
+        border-radius: 10px;
+        color: whitesmoke;
+        width: 150px;
+        height: 40px;
+       font-size: 14px;
+       padding:0 10px;
+    }
+    #cta-meeting-btn{
         background: transparent;
         border: 1px solid #f2f2f2;
         border-radius: 10px;
@@ -321,6 +330,10 @@ section{
         width: 100px;
         height: 1/-4;
     }
+    .img-fluid {
+        margin: 0 auto;
+        width: fit-content;
+    }
     #about{
         display: flex;
         flex-direction: column;
@@ -371,19 +384,37 @@ section{
     .sub-title{
         font-size:1.5rem;
     }
+    .custom-icon{
+        font-size: 6rem;
+    }
+    .card-title{
+        font-size:1.6rem;
+        font-weight: 600;
+    }
     .footer{
-        max-height:15vh;
-        overflow: hidden;
-        flex-direction: row;
-        font-size: 0.3rem;
-        justify-content: space-between;
+        height:fit-content;
+        text-align: center;
     }   
+    .container{
+        flex-direction: column-reverse;
+    }
     #footer-logo{
-        width:50px;
-        height: 50px;
+        width:45px;
+        height:45px;
+    }
+    .footer-contact{
+        width: 60vw;
+        border:0;
     }
     .footer-link{
-        font-size:0.5rem;
+        font-size:1rem;
+        display: inline;
+    }
+    .footer-brand{
+        margin: 30px 0 0;
+    }
+    #meeting-btn{
+        visibility: hidden;
     }
 
   }
@@ -395,6 +426,42 @@ section{
     #Service{
         max-height: fit-content;
     }
+    .sub-title{
+        font-size: 2rem;
+    }
+    .custom-icon{
+        font-size: 6rem;
+    }
+    .card-title{
+        font-size:1.6rem;
+        font-weight: 600;
+    }
+
+    .footer{
+        height:fit-content;
+        text-align: center;
+    }   
+    .container{
+        flex-direction: column-reverse;
+    }
+    #footer-logo{
+        width:75px;
+        height:75px;
+    }
+    .footer-contact{
+        width: 60vw;
+        border:0;
+    }
+    .footer-link{
+        font-size:1rem;
+        display: inline;
+    }
+    .footer-brand{
+        margin: 30px 0 0;
+    }
+    #meeting-btn{
+        visibility: hidden;
+    }
 
   }
   
@@ -403,6 +470,9 @@ section{
     /* Styles for screens between 769 and 992 pixels wide */
     #Service{
         max-height: fit-content;
+    }
+    #meeting-btn{
+        visibility: hidden;
     }
   }
   
